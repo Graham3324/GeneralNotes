@@ -21,3 +21,6 @@ mosquitto_pub -h localhost -t "test" -m "Hello, world!" -u "YOUR_USER" -P "YOUR_
 
 More Info: primarily esp8266/32 focused towards the end
 https://randomnerdtutorials.com/cloud-mqtt-mosquitto-broker-access-anywhere-digital-ocean/#more-97731
+https://appcodelabs.com/introduction-to-iot-how-to-build-a-simple-mqtt-subscriber-using-esp8266
+and using password security
+https://iotdesignpro.com/projects/how-to-connect-esp8266-with-mqtt
