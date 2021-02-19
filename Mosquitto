@@ -1,0 +1,23 @@
+Command Line Interface, Setup local server
+
+Startup:
+sudo systemctl enable mosquitto
+
+Check:
+sudo systemctl status mosquitto
+
+RaspPi: find interface
+ifconfig | grep inet | grep cast
+
+Security: Add user
+sudo mosquitto_passwd -c /etc/mosquitto/passwd YOUR_USERNAME
+
+Config File: open and location
+sudo nano /etc/mosquitto/conf.d/default.conf
+
+PubSub With Security:
+mosquitto_sub -h localhost -t "test" -u "YOUR_USER" -P "YOUR_PASSWORD"
+mosquitto_pub -h localhost -t "test" -m "Hello, world!" -u "YOUR_USER" -P "YOUR_PASSWORD"
+
+More Info: primarily esp8266/32 focused towards the end
+https://randomnerdtutorials.com/cloud-mqtt-mosquitto-broker-access-anywhere-digital-ocean/#more-97731
